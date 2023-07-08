@@ -4,3 +4,4 @@ Sklearn
 Pandas
 Numpy
 Joblib
+Flask_session
