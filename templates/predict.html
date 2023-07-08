@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    html {background-color: rgb(202, 250, 255);
+    font-family: 'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 
+    'Lucida Sans Unicode', 
+    Geneva, 
+    Verdana, 
+    sans-serif;
+    }
+     
+
+p {
+  max-width: 600px;
+}
+
+</style>
+</head>
+<body>
+
+<title>Gestational Diabetes Risk Calculator</title>
+<h1>
+    Gestational Diabetes Risk
+</h1>
+<p>
+    This calculator is based on a random forests model trained on the dataset found <a href = "https://www.kaggle.com/datasets/sumathisanthosh/gestational-diabetes-mellitus-gdm-data-set">here</a>. 
+    It is purely for entertainment purposes and is not meant as an actual diagnostic tool or medical advice.
+    </p>
+<table>
+    <form action = "/" method = post>
+        <tr>
+            <td><label for "age">Age:</label></td>
+            <td><input type = "text" name = "age" size = "3" placeholder = "years"></td>
+        </tr>
+
+        <tr>
+            <td><label for "height">Height:</label></td>
+            <td><input type = "text" name = "height" size = "3" placeholder = 'in'><br></td>
+
+        </tr>
+
+        <tr>
+            <td><label for "weight">Weight:</label></td>
+            <td><input type = "text" name = "weight" size = "3" placeholder = "lbs"><br></td>
+        </tr>
+
+        <tr>
+            <td><label for "hdl">HDL Cholesterol: </label></td>
+            <td><input type = "text" name = "hdl" size = "3" placeholder = mg/DL><br></td>
+
+        </tr>
+
+        <tr>
+            <td><label for "systolic">Systolic Blood Pressure: </label></td>
+            <td><input type = "text" name = "systolic" size = "3" placeholder = "mm HG"><br></td>
+
+        </tr>
+
+        <tr>
+            <td><label for "diastolic">Diastolic Blood Pressure: </label></td>
+            <td><input type = "text" name = "diastolic" size = "3" placeholder = "mm HG"><br></td>
+
+        </tr>
+
+        <tr>
+            <td><label for "glucose">Fasting Glucose: </label></td>
+            <td><input type = "text" name = "glucose" size = "3" placeholder = "mg/DL"><br></td>
+        </tr>
+
+        <tr>
+            <td><label for "ac1">Hemoglobin A1c: </label></td>
+            <td><input type = "text" name = "a1c" size = "3" placeholder = "%"><br></td>
+
+
+        </tr>
+
+        <tr>
+            <td><input type = "submit" value = "Calculate"></td>
+        </tr>
+        
+    </form>
+</table>
+
+<p>
+{{prediction}}
+</p>
+
+
+</body>
+</html>
