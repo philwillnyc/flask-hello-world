@@ -1,7 +1,7 @@
 Flask
 Gunicorn
-Sklearn
-Pandas
-Numpy
-Joblib
-Flask_session
+scikit-learn
+pandas
+numpy
+joblib
+flask_session
