@@ -3,3 +3,4 @@ Gunicorn
 Sklearn
 Pandas
 Numpy
+Joblib
